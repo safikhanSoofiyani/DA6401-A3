@@ -257,20 +257,3 @@ where :
 ```python
 testing()
 ```
-### 6. Plotting Attention maps :
-<br/> The attention maps for the model can be built running the following section of ipynb notebook : 
-```python
-Plotting attention maps
-```
-#### 7. Visualising Connectivity  : 
-<br/> The connectivity can be visualized using either of the following functions :
-
-```python
-visualize_gif(index)
-```
-```python 
-visualize(index)
-```
-where :
-1. `visualize_gif(index)` displays a gif format of connectivity visualization of the word at the given `index` 
-2. `visulaize(index)` displays an image format of connectivity visualization of the word at the given `index`
