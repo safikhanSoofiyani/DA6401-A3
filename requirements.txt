@@ -1,0 +1,8 @@
+numpy
+matplotlib
+Keras
+wandb
+tensorflow
+pandas
+transformers
+datasets
