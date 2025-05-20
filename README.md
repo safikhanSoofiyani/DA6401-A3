@@ -11,9 +11,6 @@ The purpose of this project were :
 1. Building a transliteration system using Recurrent Neural Networks.
 2. Comparing different cells such as vanilla RNN, LSTM and GRU. 
 3. Implementing attention mechanism and understand how these overcome the limitations of vanilla seq2seq models.
-4. Fine tuning GPT2 transformer model to generate lyrics based on the prompt given.
-
-The link to the wandb report: 
 
 ---
 ## General Instructions:
@@ -22,33 +19,13 @@ The link to the wandb report:
 ```python 
 pip install -r requirements.txt
 ```
-2. The project is presented in the following notebooks :
-    1. `RNN.ipynb` : This notebook corresponds to training an Seq2Seq Model without attention
-    2. `RNN_with_Attention.ipynb` : This notebook corresponds to training an Seq2Seq Model with attention, visualizing the connectivity and plotting the attention maps
-    3. `Lyrics_Generation.ipynb` : This notebook corresponds to training GPT2 transformer model for lyrics generation
-  Along with jupyter notebooks we have also given python code filed (.py) files. These contain the code to direclty train and test the model in a non interactive way.
-3. For seeing the outputs and the various explanations, and how the code has developed, please check the jupyter notebooks . For training and testing the model from command line, run the (.py) file by following the instructions given in below sections.
-
-3.  If you are running the jupyter notebooks on colab, the libraries from the `requirements.txt` file are preinstalled, with the `exception` of the following:
-    * `wandb`
-    * `transformers`
-    *  `datasets`
-    <br/> <br/> You can install wandb by using the following command :
-```python
-!pip install wandb
-!pip install transformers
-!pip install datasets
-
-```
+2. The project is in the given python code filed (.py) files. These contain the code to direclty train and test the model in a non interactive way.
+3. For training and testing the model from command line, run the (.py) file by following the instructions given in below sections.
 4. The dataset for the RNN part of the project can be found at : [RNN Dataset Link](https://storage.googleapis.com/gresearch/dakshina/dakshina_dataset_v1.0.tar)
 5. The dataset for the Transformers part of the project can be found at : [Transformer Dataset Link](https://www.kaggle.com/neisse/scrapped-lyrics-from-6-genres)
 ---
 # Building and training a Seq2Seq model :
 ## Running the code
-As mentioned earlier, there are two files. One is a jupyter notebook and the other is the python code file.<br>
-The jupyter notebook has the outputs still intact so that can be used for reference. <br>
-The python file has all the functions and the code used in the jupyter file (along with some additional code that can be used to run from the command line)<br>
-<br>
 ### Running the python file from the terminal
 The python file can be run from the terminal by passing the various command line arguments. Please make sure that the three files of the dataset are as it is present in the same directory as this python file<br>
 There are two modes of running this file <br> <br>
@@ -153,10 +130,6 @@ testing()
 ---
 # Building and training a Seq2Seq model with attention mechanism:
 ## Running the code
-As mentioned earlier, there are two files. One is a jupyter notebook and the other is the python code file.<br>
-The jupyter notebook has the outputs still intact so that can be used for reference. <br>
-The python file has all the functions and the code used in the jupyter file (along with some additional code that can be used to run from the command line)<br>
-<br>
 ### Running the python file from the terminal
 The python file can be run from the terminal by passing the various command line arguments. Please make sure that the three files of the dataset are as it is present in the same directory as this python file<br>
 There are two modes of running this file <br> <br>
